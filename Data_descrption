@@ -1,0 +1,9 @@
+The dataset consists of 831 brain MRI images used for binary classification of Parkinson’s Disease. The data is divided into two classes: Parkinson’s Disease (positive cases) and Normal (healthy controls). Each image represents a 2D axial MRI slice in grayscale format.
+
+Multiple images belong to the same patient, and each file includes a patient identifier in its filename. This allows grouping of images at the patient level, which is important for preventing data leakage during training and evaluation.
+
+During preprocessing, all images are resized to 224 × 224 pixels and converted from single-channel grayscale to three-channel format to match pretrained model requirements. Pixel values are normalized using standard ImageNet statistics.
+
+To improve model generalization and handle the limited dataset size, several data augmentation techniques are applied during training, including random horizontal flipping, affine transformations, MixUp, CutMix, and Random Erasing.
+
+A Stratified Group K-Fold strategy is used to ensure that images from the same patient do not appear in both training and validation sets, while also maintaining balanced class distribution across folds.
