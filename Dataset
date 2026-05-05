@@ -1,44 +1,30 @@
-📊 Parkinson’s Brain MRI Dataset
-📌 Dataset Source
+📊 Dataset
+🧠 Parkinson’s Brain MRI Dataset
 
-The dataset used in this project is publicly available on Kaggle:
+This project uses a publicly available dataset of brain MRI scans related to Parkinson’s disease.
 
-🔗 Parkinson’s Brain MRI Dataset
-👉 Download Dataset:https://www.kaggle.com/datasets/irfansheriff/parkinsons-brain-mri-dataset/data
+🔗 Download from Kaggle:
+https://www.kaggle.com/datasets/irfansheriff/parkinsons-brain-mri-dataset
 
-🧠 Dataset Description
-
-This dataset contains brain MRI images related to Parkinson’s disease, which can be used for building machine learning and deep learning models for medical image classification.
-
-The dataset consists of approximately 830 MRI image files organized into folders.
-Images represent brain scans that can be used to identify patterns associated with Parkinson’s disease.
-The dataset is suitable for computer vision tasks such as:
+📖 Overview
+Contains MRI brain images for Parkinson’s disease analysis
+Organized into class-based folders
+Suitable for:
 Image classification
-Feature extraction
-Medical diagnosis using deep learning
+Deep learning (CNN, CNN-LSTM, ViT, etc.)
+Feature extraction tasks
 
-Although the dataset does not provide a detailed official description, it is commonly used in research workflows involving MRI-based neurological disorder detection.
+This dataset is mainly used for experimental and learning purposes in medical image analysis.
 
-📁 Dataset Structure
+📁 Structure
 parkinsons_dataset/
 │
 ├── class_1/
-│   ├── image1.jpg
-│   ├── image2.jpg
-│   └── ...
-│
 ├── class_2/
-│   ├── image1.jpg
-│   ├── image2.jpg
-│   └── ...
-│
 └── ...
-The dataset is organized into folders (classes)
-Each folder contains MRI images corresponding to a specific category
-⚙️ Usage in This Project
-
-In this project, the dataset is used for:
-
-Preprocessing MRI images (resizing, normalization)
-Feature extraction using deep learning models (CNN / CNN-LSTM / ViT)
-Classification of Parkinson’s disease based on brain MRI patterns
+Each folder represents a category
+Images are stored in standard formats (JPG/PNG)
+⚙️ How it’s used in this project
+Image preprocessing (resize, normalization)
+Model training using deep learning architectures
+Classification of MRI scans
